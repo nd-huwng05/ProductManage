@@ -1,11 +1,9 @@
 package com.huwng05.utils;
 
 import com.huwng05.productmanage.App;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -43,7 +41,7 @@ public class MyStage {
    }
 
    public void goBack() {
-       if (!history.isEmpty()) return;
+       if (history.isEmpty()) return;
        scene.setRoot(history.pop());
        this.stage.setScene(scene);
        this.stage.show();

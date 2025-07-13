@@ -35,6 +35,11 @@ public class Product {
         private int category_id;
         private int supplier_id;
 
+        public Builder (int id, String name) {
+            this.id = id;
+            this.name = name;
+        }
+
         public Builder (int id, String name, int category_id, int supplier_id) {
             this.id = id;
             this.name = name;

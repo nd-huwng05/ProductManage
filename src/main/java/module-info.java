@@ -7,4 +7,5 @@ module com.huwng05.productmanage {
 
     opens com.huwng05.productmanage to javafx.fxml;
     exports com.huwng05.productmanage;
+    exports com.huwng05.pojo;
 }

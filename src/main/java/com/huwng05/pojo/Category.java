@@ -16,6 +16,11 @@ public class Category {
         this.description = description;
     }
 
+    public Category(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public static String tableName() {
         return "categories";
     }
